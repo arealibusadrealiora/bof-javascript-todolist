@@ -1,0 +1,163 @@
+form {
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px;
+    border-radius: 0.5em;
+    border: solid #9486ae 10px;
+    background-color: #a999c7;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 37.6%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body  {
+    padding: 0;
+    background: #1d1223;
+    box-sizing: border-box;
+    color: white;
+}
+
+ul {
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    margin-right: -50%;
+}
+
+li button {
+    width: 60px;
+    border:none;
+    border-radius: 0.5em;
+    background-color: #886d97;
+    color:aliceblue;
+    margin-right: 2px;
+}
+
+#title {
+    width: 262px;
+}
+
+#date {
+    width: 265px;
+}
+
+#status {
+    width: 270px;
+}
+
+#add_btn {
+    width: 270px;
+    border:none;
+    border-radius: 0.5em;
+    background-color: #1a961c;
+    color:aliceblue;
+}
+
+#add_btn:hover {
+    background-color:rgb(25, 180, 76);
+    color: #ffffff;
+}
+
+#save_btn {
+    width: 270px;
+    border:none;
+    border-radius: 0.5em;
+    background-color: #1a961c;
+    color:aliceblue;
+}
+
+#save_btn:hover {
+    background-color:rgb(25, 180, 76);
+    color: #ffffff;
+}
+
+#cancel_btn {
+    width: 270px; 
+    border:none;
+    border-radius: 0.5em;
+    background-color: #8b1414;   
+    color:aliceblue;
+}
+
+#cancel_btn:hover {
+    background-color:rgb(180, 25, 25);
+    color: #ffffff;
+}
+
+#new_btn {
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+    border: none;
+    color: rgb(222, 222, 222);
+    background-color: #4d3662e5;
+    font-size: 1em;
+    height: 50px;
+    width: 300px;
+    margin: 1em;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#new_btn:hover {
+    background-color:rgb(162, 0, 255);
+    color: #ffffff;
+    width: 350px;
+    transition: width 1s;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0em;
+}
+
+section div {
+    margin-top: 2em;
+    margin-right: 1em;
+    padding-top: 1em;
+    padding-left: 1em;    
+}
+
+.done {
+    border-left: 8px solid green;
+    height: 1;
+}
+
+.notst {
+    border-left: 8px solid red;
+    height: 1em;
+}
+
+.inpro {
+    border-left: 8px solid yellow;
+    height: 1em;
+}

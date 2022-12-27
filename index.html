@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do list</title>
+</head>
+
+<body>
+    <main>
+        <button type="button" id="new_btn" onclick="toggleForm()">ADD A NEW TO-DO</button>
+        <form>
+            <h3>ADD A NEW TO-DO:</h3>
+            <div>
+                <input type="text" name="title" id="title" placeholder="Title">
+            </div>
+            <div>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <select name="status" id="status">
+                    <option value="done">Done</option>
+                    <option value="not started">Not Started</option>
+                    <option value="in progress">In Progress</option>
+                </select>
+            </div>
+            <br>
+            <button type="button" id="add_btn" onclick="addItem()">Add</button>
+            <button type="button" id="save_btn" onclick="onEdit()">Save</button>
+            <button type="button" id="cancel_btn">Cancel</button>
+        </form>
+        <ul></ul>
+        <section name ="explanation" id="explanation">
+            <div class="done">Done</div>
+            <div class="notst">Not started</div>
+            <div class="inpro">In progress</div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
